@@ -2,20 +2,49 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>JS ALL the things!!</title>
-    <style>
-        .logo_image {
-            width: 200px;
-        }
-    </style>
+  <title>JS ALL the things!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="/bower_components/platform/platform.js"></script>
+  <link rel="import" href="/bower_components/core-scaffold/core-scaffold.html">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #navheader {
+      background-color: #56BA89;
+    }
+    .content {
+      padding: 20px;
+    }
+    .logo_image {
+      width: 300px;
+    }
+  </style>
 </head>
 
-<body>
-    <div>
-        <img src="https://s3-eu-west-1.amazonaws.com/jsallthethings/jsallthethings.png" class="logo_image">
+<body unresolved>
+  <core-scaffold>
+
+    <core-header-panel navigation flex>
+      <core-toolbar id="navheader">
+        <span>Menu</span>
+      </core-toolbar>
+      <core-menu>
+        <core-item label="One"></core-item>
+        <core-item label="Two"></core-item>
+      </core-menu>
+    </core-header-panel>
+
+    <span tool>
+      <img src="https://s3-eu-west-1.amazonaws.com/jsallthethings/jsallthethings2.png" class="logo_image">
+    </span>
+
+    <div class="content">
+      If drawer is hidden, press button to display drawer.
     </div>
-    <p></p>
+  </core-scaffold>
 </body>
 
 </html>
